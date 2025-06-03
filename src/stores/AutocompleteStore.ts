@@ -80,6 +80,7 @@ export class AutocompleteStore {
 
   selectSuggestion(item: Country) {
     this.value = item.name.trim();
+    this.suggestions = [];
     this.isSuggestionsVisible = false;
   }
 
